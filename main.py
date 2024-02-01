@@ -18,7 +18,7 @@ if day == 3: #You can change it to any day you want
         connection.starttls()
         connection.login(user=my_email, password=password)
         connection.sendmail(from_addr=my_email,
-                            to_addrs="ipekkunluupy@yahoo.com",
+                            to_addrs=my_email,
                             msg=f"Subject:Daily Quote\n\n{choose_quote}")
         connection.close()
 
